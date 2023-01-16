@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Jua&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+   margin:0;
+   background-color: black;
+}
+
+div.navbar{
+    display:flex;
+    justify-content: space-around;
+}
+div.logo {
+   
+    color:white;
+    font-family: 'Jua', sans-serif;
+}
+
+div.onglets{
+    display: flex;
+}
+
+div.onglets a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Jua', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: end;
+    padding: 12px;
+    margin-top: 20px;
+    margin: 23px;
+}
+   
+div.notification {
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    color:white;
+  }
+  
+  
+  
+div.badge  {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: white;
+  }
+
+
+div.header{
+    background:url('/media/image/fond-header.png');
+    background-size: cover;
+    height:960px;
+    min-height: auto;
+    background-repeat: no-repeat;
+    
+}
+
+div.btnheader{
+    display:flex;
+    justify-content:flex-start;
+}
+
+button#btnh{
+ display: flex;
+
+}
+
+div.main{
+    display:flex;
+    flex-direction: column;
+}
+
+div.titre {
+    background-color: black;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: inherit;
+}
+
+h1#swipe {
+    border-radius: 22px 22px; 
+    border: 2px solid #FFFFFF;
+    width: 443px;
+    text-align: center;
+    padding: 4px;
+    text-shadow: -1px 1px 3px white;
+    box-shadow: 0px 0px 2px 1px #fff;
+
+}
+
+div.accueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FFFFFF; 
+}
+
+div.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;  
+}
+
+
+div.items:hover{
+    background-color: #ffc107;
+    opacity: 60%;
+}
+
+
+
+span.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color:white;
+  
+}
+
+span.material-symbols-outlined :hover{
+    box-shadow: inset;
+}
+div.items{
+    background-color: black;
+    display: flex;
+    padding: 180px;
+}
+
+div.horaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:black;
+    color:#fff;
+    height: 506px;
+    padding-bottom: 40px;
+}
+
+div.box{
+    box-shadow: 1px 2Px 5px #00000061;
+
+}
+video#pub{
+    width: 900px;
+    
+    
+}
+
+div#contenuQsn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#titreQsn{
+    text-align: center;
+    font-family: 'Jua';
+    text-shadow:-2px 5px 12px #0000008c;
+}
+
+div#imageQsn{
+    display: flex;
+    justify-content: center;
+   
+}
+
+div#imageQsn img{
+    border-radius: 100px;
+    box-shadow: -17px 4px 9px 0px #3229292b;
+}
+
+div#textQsn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+
+
+
+div.qsn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #bc3232;;
+    color: #fff;
+    height: 300px;
+    margin-top: -5px;
+    box-shadow: 0px 2px 6px 5px #2c292959;
+    padding: 40px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: -10px;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+
+}
+/* css vue-menu.hmtl*/
+
+div.headerMenu{
+    background:url('/media/image/fh.jpg');
+    background-size: cover;
+    height:870px;
+    min-height: auto;
+    background-repeat: no-repeat;
+   
+}
+
+div.resume{
+        display:flex ;
+        flex-direction: column;
+        align-items: end;
+    
+}
+div.parcourir {
+    display: flex;
+    flex-direction: column;
+}
+
+button#btnParcourir{
+    transition-duration: 0.4s;
+    background-color:  #070707c4;
+    color: white;
+    border: 2px solid #00000000;
+    height: 80px;
+    font-family: 'Jua';
+    font-size: xxx-large;
+}
+
+button#btnParcourir:hover{
+    background-color: #ffc107;
+    color: white;
+    border: 2px 0px solid #030303a8;
+}
+
+
+div.section {
+    padding: 20px;
+    border: solid #070707;
+    box-shadow: 1px 4px #090909eb;
+    background-color: #090a0a;
+    color: white;
+
+}
+
+div.contenu{
+        background-color: #00000054;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        
+}
+
+
+div.repas , .burger, .dessert{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+
+
+
+div#titreMenu {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    text-shadow: 1px 1px 2px black, 0 0 15px #c1c1d1, 0 0 20px white;
+    font-family: 'Jua';
+    text-transform: uppercase;
+}
+
+div.imgMenu {
+    display:flex;
+    overflow:hidden;
+   
+}
+
+div.imgMenu img{
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+div.imgMenu:hover img{
+    transform:scale(1.2);
+}
+
+div.mainContenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+div.btnContenu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button.btnAdd{
+    transition-duration: 0.4s;
+    background-color: #00000021;
+    color: white;
+    border: 2px solid #00000000;
+    height: 50px;
+    font-family: cursive;
+    width: 204px;
+}
+
+button.btnAdd:hover{
+    background-color: #ffc107;
+    color: white;
+    border: 2px 0px solid #030303a8;
+  
+}
+
+button.btnRemove{
+    transition-duration: 0.4s;
+    background-color: #00000021;
+    color: white;
+    border: 2px solid #00000000;
+    height: 50px;
+    font-family: cursive;
+    width: 205px;
+}
+
+button.btnRemove:hover{
+    background-color: rgb(150 43 33);;
+    color: white;
+    border: 2px 0px solid #030303a8;
+    
+  
+}
+
+
+/*vue confirmation*/
+div.mainConfirmation{
+    display:flex;
+    flex-direction: row;
+}
+
+div.left {
+    background-color: aquamarine;
+    background-size: cover;
+    display: flex;
+    padding:236px;
+}
+
+div.right{
+    background-color: white;
+    padding: 350px;
+}

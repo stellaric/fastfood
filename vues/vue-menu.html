@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    <title>FastFood Light</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerMenu">
+            <div class="navbar">
+                <div class="logo">
+                    <h1> FastFood Light </h1>
+                </div>
+
+                <div class="onglets">
+                    <a href="../index.html">Accueil</a>
+                    <a href="#menu">Nos Menus</a>
+                    <a href="../index.html#qsn"> Qui sommes-nous ? </a>
+                    <a href="#" class="notification">
+                        <span class="material-symbols-outlined" style="font-weight: bolder;">shopping_bag </span>
+                        <span class="badge" id="num">0</span>
+                      </a>
+                </div>
+            </div>
+
+            <div class="resume">
+                <button onclick="ordre()">Commander</button>
+                <p id="totalprix"></p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+       
+            <form action="#parcourir" method="get">
+                <div class="parcourir">
+            <button type="submit" id="btnParcourir">Nos Menus</button>
+        </div>
+        </form>
+        
+        
+
+        <div class="section">
+
+            <div id="titreMenu">
+                <h1 id="burger">Burger</h1>
+            </div>
+            <div class="burger">
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/bg-1.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Burger Veggie</h3>
+                        <p>5€30</p>
+                    </div>
+                    <div class="btnMenu">
+                    <button class="btnAdd" id="0" onclick="addMenu(this)">Ajouter </button>
+                    <button class="btnRemove" id="0" onclick="removeMenu(this)">Retirer </button>
+                </div>
+                </div>
+
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/bg-2.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Double Cheese</h3>
+
+                        <p>6€30</p>
+                    </div>
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="1" onclick="addMenu(this)">Ajouter </button>
+                        <button class="btnRemove" id="1" onclick="removeMenu(this)"" >Retirer </button>
+                    </div>
+
+                </div>
+
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/bg-3.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+                    <div class="mainContenu">
+                        <h3>Cheesburger </h3>
+                        <p>4€20</p>
+                    </div>
+
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="2" onclick="addMenu(this)">Ajouter </button>
+                        <button class="btnRemove" id="2" onclick="removeMenu(this)" >Retirer </button>
+                    </div>
+                </div>
+            </div>
+            <div id="parcourir"></div>
+
+        </div>
+           
+        <div class="section" >
+            <div id="titreMenu">
+                <h1 id="accompagnement">Accompagnement</h1>
+            </div>
+
+
+            <div class="repas">
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/frite.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Frite</h3>
+
+                        <p>2€30</p>
+                    </div>
+
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="3" onclick="addMenu(this)" >Ajouter </button>
+                        <button class="btnRemove" id="3" onclick="removeMenu(this)">Retirer </button>
+                    </div>
+                </div>
+
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/salade.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Salade</h3>
+
+                        <p>2€80</p>
+                    </div>
+
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="4" onclick="addMenu(this)" >Ajouter </button>
+                        <button class="btnRemove" id="4" onclick="removeMenu(this)">Retirer </button>
+                    </div>
+
+                </div>
+
+
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/patate-douce.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Frite de patate douce</h3>
+
+                        <p>3€30</p>
+                    </div>
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="5" onclick="addMenu(this)" >Ajouter </button>
+                        <button class="btnRemove" id="5" onclick="removeMenu(this)">Retirer </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div id="titreMenu">
+                <h1 id="#hamburger">Dessert</h1>
+            </div>
+            <div class="dessert" id="dessert">
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/tiramisu.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Tiramisu</h3>
+
+                        <p>3€30</p>
+                    </div>
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="6" onclick="addMenu(this)" >Ajouter </button>
+                        <button class="btnRemove" id="6" onclick="removeMenu(this)">Retirer </button>
+                    </div>
+                </div>
+
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/glace.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Glace</h3>
+
+                        <p>3€80</p>
+                    </div>
+                    <div class="btnMenu">
+                        <button class="btnAdd" id="7" onclick="addMenu(this)" >Ajouter </button>
+                        <button class="btnRemove" id="7" onclick="removeMenu(this)">Retirer </button>
+                    </div>
+                </div>
+
+
+                <div class="contenu">
+                    <div class="imgMenu">
+                        <img src="../media/image/donuts.jpg" alt="test" width="430px" height="300px" />
+                    </div>
+                    <br>
+
+                    <div class="mainContenu">
+                        <h3>Donuts</h3>
+
+                        <p>3€90</p>
+                    </div>
+                    <div class="btnContenu">
+                        <button class="btnAdd" id="8" onclick="addMenu(this)" >Ajouter </button>
+                        <button class="btnRemove" id="8" onclick="removeMenu(this)">Retirer </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Ceci est un exemple Copyright 2023 - Créé par RStella </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

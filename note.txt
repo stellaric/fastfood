@@ -1,0 +1,38 @@
+Image par <a href="https://pixabay.com/fr/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2029394">OpenClipart-Vectors</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2029394">Pixabay</a>
+
+Image par <a href="https://pixabay.com/fr/users/openclipart-vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2029405">OpenClipart-Vectors</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2029405">Pixabay</a>
+
+Image par <a href="https://pixabay.com/fr/users/amiraxgelcola-13484139/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5722678">Carlos Carlos Alberto</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5722678">Pixabay</a>
+Image par <a href="https://pixabay.com/fr/users/engin_akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4165636">Engin Akyurt</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4165636">Pixabay</a>
+<video src="media/video/video_fa.mp4" alt="pub" autoplay controls loop muted></video>
+
+h1#swipe {
+    border-radius: 22px 22px; 
+    border: 2px solid #FFFFFF;
+    width: 443px;
+    text-align: center;
+    padding: 4px;
+    text-shadow: -1px 1px 3px white;
+    box-shadow: 0px 0px 2px 1px #fff;
+
+}
+
+div.titre {
+    background-color: black;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: inherit;
+}
+
+
+  <a href="#"><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span></a>  
+
+
+    -2px 5px 12px #0000008c;
+}
+
+Image par <a href="https://pixabay.com/fr/users/engin_akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4215450">Engin Akyurt</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4215450">Pixabay</a>
+<a target="_blank" href="https://icons8.com/icon/85080/caddie">Caddie</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
