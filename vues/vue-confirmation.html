@@ -9,17 +9,25 @@
     <title>FastFood Light</title>
 </head>
 
-<body>
-  
+<body >
+  <!--header : navbar + onglets + logo-->
+  <header>
+    <div class="header" style="height: 910px;">
+        <div class="navbar"> 
+            <div class="logo">
+            <h1 > FastFood Light </h1>
+            </div>
+        </div>
+        <div class="boxConfirm">
+            <div class="loader"></div>
+            <p>Vous serez rediriger à la page d'accueil </p>
+        </div>
+    </div> 
+</header>
+<!---->
 <main>
-<div class="mainConfirmation">
-<div class="left">
-test
-</div>
-<div class="right">
-test 
-</div>
-</div>
+    
+    
 </main>
 
 <footer>
@@ -28,5 +36,9 @@ test
     </div>
 
 </footer>
+<script>
+    // sends back to home page after a few secs
+    setTimeout(() => { window.location = '../index.html' }, 3000)      
+</script>
 </body>
 </html>

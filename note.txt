@@ -36,3 +36,164 @@ div.titre {
 
 Image par <a href="https://pixabay.com/fr/users/engin_akyurt-3656355/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4215450">Engin Akyurt</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4215450">Pixabay</a>
 <a target="_blank" href="https://icons8.com/icon/85080/caddie">Caddie</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+        <div id="parcourir"></div>
+
+        <div class="parcourir">
+        <button type="submit" id="btnParcourir"></button>
+        </div>
+
+<!--Section 2 : qsn = qui sommes nous ? -->   
+    <section>
+        <div class="qsn" id="qsn">
+            <div id="imageQsn">
+            <img src="media/image/bg-1.jpg" alt="test" />
+            </div>
+                
+            <div id="contenuQsn">
+                <div id="titreQsn">
+                    <h1>Qui sommes-nous ?</h1>
+                </div>
+
+                <div id="textQsn">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolorum et placeat reiciendis minima porro officiis.<br> Aspernatur eveniet suscipit fugit sapiente, reiciendis laborum molestiae incidunt voluptatum quis minima? Unde, aut?</p>
+                <br>
+                <p> Twitter - Facebook - Insta </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!----> 
+    <div class="parcourir">
+        <button type="submit" id="btnParcourir"></button>
+    </div>
+
+<!--Section 3 : image + video --> 
+    <section>
+    
+        <div class="horaire">
+        <div class="box">
+            
+            <video src="media/video/video_fa.mp4"  id="pub" alt="pub" autoplay loop ></video>
+        </div>
+        
+        </div>
+      
+       
+    </div>
+    </section>
+
+
+    /////////////
+    function addMenu(key){
+  let itemKey = parseInt(key.id)
+    menu[itemKey].ordre = menu[itemKey].ordre + 1 
+    console.log(menu[itemKey].ordre)
+    totalPrix = totalPrix + menu[itemKey].prix
+    document.getElementById("totalPrix").innerHTML = '$totalPrix'
+    
+    console.log(totalPrix)
+}
+/////////
+
+
+let menu = [
+  {
+    'menuName' : 'Burger Veggie',
+    'prix' : 5.30 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Double Cheese',
+    'prix' : 6.30 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'CheeseBurger',
+    'prix' : 4.20 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Frite',
+    'prix' : 2.30 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Salade',
+    'prix' : 2.80 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Frite de patate douce',
+    'prix' : 3.30 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Tiramisu',
+    'prix' : 3.30 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Glace',
+    'prix' : 3.80 ,
+    'ordre' : 0,
+  },
+  {
+    'menuName' : 'Donuts',
+    'prix' : 3.90 ,
+    'ordre' : 0,
+  }
+]
+
+let totalPrix = 0 
+
+
+///////////////////////////////////////////////////
+function addMenu(key){
+  let itemKey = parseInt(key.id)
+    menu[itemKey].ordre = menu[itemKey].ordre + 1 
+    console.log(menu[itemKey].ordre)
+    totalPrix = totalPrix + menu[itemKey].prix
+    document.getElementById("totalPrix").innerHTML = '$totalPrix'
+    
+    console.log(totalPrix)
+}
+///////////////////////////////////////////////////
+
+function removeMenu(key) {
+  let itemKey = parseInt(key.id)
+  if (menu[itemKey].ordre >0) {
+    menu[itemKey].ordre = menu[itemKey].ordre - 1 
+    console.log(menu[itemKey].ordre)
+    totalPrix = totalPrix - menu[itemKey].prix
+    console.log(totalPrix)
+  } else {
+    console.log('Panier vide')
+  }
+  
+}
+///////////////////////////////////////////////////
+
+function ordre() {
+console.log('==============')
+for (i=0; i < menu.lenght;i++){
+  if(menu[i].ordre > O){
+      console.log(menu[i].ordre)
+      menu[i].ordre =0
+      console.log(menu[i].ordre)
+  }
+}
+console.log(totalPrix + '€')
+    totalPrix = 0
+    console.log(totalPrix)
+}
+
+
+
+///////////////////////////////////////////////////
+
+  
+  
+
+  

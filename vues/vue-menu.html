@@ -23,29 +23,55 @@
                     <a href="../index.html">Accueil</a>
                     <a href="#menu">Nos Menus</a>
                     <a href="../index.html#qsn"> Qui sommes-nous ? </a>
+
+                    
                     <a href="#" class="notification">
-                        <span class="material-symbols-outlined" style="font-weight: bolder;">shopping_bag </span>
-                        <span class="badge" id="num">0</span>
+
+
+                        <div class="popup" onclick="showOrdre()">
+                            <span class="material-symbols-outlined" style="font-weight: bolder;">shopping_bag </span>
+                            <span class="badge" class="ordre">0</span>
+                            
+                            <span class="popuptext" id="myPopup">
+                                        <h3 class="textOrdre">Montant</h3>
+                                        <p id="ordreitems"></p>
+                                        <p id="totalprix"></p>
+                                        
+                                        <button class="item_ordre" onclick="ordre()">
+                                            <span id="btn_ordre">Valider le panier</span>
+                                        </button>                              
+                            </span>
+
+                          </div>
+                        
+                      
+                    </a>
+
+
+
                       </a>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="resume">
-                <button onclick="ordre()">Commander</button>
-                <p id="totalprix"></p>
-            </div>
+
+            
 
         </div>
-    </header>
 
+       
+
+    </header>
+    
 
     <main>
        
-            <form action="#parcourir" method="get">
+         
                 <div class="parcourir">
             <button type="submit" id="btnParcourir">Nos Menus</button>
         </div>
-        </form>
+       
         
         
 
@@ -66,8 +92,8 @@
                         <p>5€30</p>
                     </div>
                     <div class="btnMenu">
-                    <button class="btnAdd" id="0" onclick="addMenu(this)">Ajouter </button>
-                    <button class="btnRemove" id="0" onclick="removeMenu(this)">Retirer </button>
+                    <button class="btnAdd" id="0" onclick="addMenu(this)"> Ajouter </button>
+                    <button class="btnRemove" id="0" onclick="removeMenu(this)"> Retirer </button>
                 </div>
                 </div>
 
@@ -84,8 +110,8 @@
                         <p>6€30</p>
                     </div>
                     <div class="btnMenu">
-                        <button class="btnAdd" id="1" onclick="addMenu(this)">Ajouter </button>
-                        <button class="btnRemove" id="1" onclick="removeMenu(this)"" >Retirer </button>
+                        <button class="btnAdd" id="1" onclick="addMenu(this)"> Ajouter </button>
+                        <button class="btnRemove" id="1" onclick="removeMenu(this)"> Retirer </button>
                     </div>
 
                 </div>
@@ -102,8 +128,8 @@
                     </div>
 
                     <div class="btnMenu">
-                        <button class="btnAdd" id="2" onclick="addMenu(this)">Ajouter </button>
-                        <button class="btnRemove" id="2" onclick="removeMenu(this)" >Retirer </button>
+                        <button class="btnAdd" id="2" onclick="addMenu(this)"> Ajouter </button>
+                        <button class="btnRemove" id="2" onclick="removeMenu(this)"> Retirer </button>
                     </div>
                 </div>
             </div>

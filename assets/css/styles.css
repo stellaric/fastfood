@@ -4,11 +4,13 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
    margin:0;
    background-color: black;
 }
 
+ /* barre de navigation */
 div.navbar{
     display:flex;
     justify-content: space-around;
@@ -29,7 +31,7 @@ div.onglets a {
     font-family: 'Jua', sans-serif;
     font-size: larger;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     padding: 12px;
     margin-top: 20px;
     margin: 23px;
@@ -47,6 +49,7 @@ div.notification {
   
   
 div.badge  {
+    
     position: absolute;
     top: -10px;
     right: -10px;
@@ -55,11 +58,116 @@ div.badge  {
     color: white;
   }
 
+  span#myPopup {
+    display: flex;
+    flex-direction: column;
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -2%;
+    margin-left: -176px;
+    align-items: center;
+    background-color: #d7a12bc9;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid #f8b4192e;
+    margin-top: 35px;
+    box-shadow: 3px 2px 3px 0px #6a5d24;
+}
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #6a5d24 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+h3.textOrdre {
+    text-decoration: underline;
+    text-align: center;
+}
+
+button.item_ordre {
+    border-radius: 4px;
+    background-color: #000000f2;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 8px;
+}
+
+button.item_ordre span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button.item_ordre :after{
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+    
+}
+button.item_ordre:hover span {
+    padding-right: 15px;
+  }
+  
+button.item_ordre:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  /* ---------------*/
+
 
 div.header{
     background:url('/media/image/fond-header.png');
     background-size: cover;
-    height:960px;
+    height:875px;
     min-height: auto;
     background-repeat: no-repeat;
     
@@ -69,6 +177,8 @@ div.btnheader{
     display:flex;
     justify-content:flex-start;
 }
+
+
 
 button#btnh{
  display: flex;
@@ -113,6 +223,11 @@ div.menu{
     background-color: black;  
 }
 
+div.items{
+    background-color: black;
+    display: flex;
+    padding: 180px;
+}
 
 div.items:hover{
     background-color: #ffc107;
@@ -136,17 +251,14 @@ span.material-symbols-outlined {
     font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased;
     color:white;
+        cursor: pointer;
   
 }
 
 span.material-symbols-outlined :hover{
     box-shadow: inset;
 }
-div.items{
-    background-color: black;
-    display: flex;
-    padding: 180px;
-}
+
 
 div.horaire{
     display: flex;
@@ -183,7 +295,7 @@ div#titreQsn{
 div#imageQsn{
     display: flex;
     justify-content: center;
-   
+    width:230px;
 }
 
 div#imageQsn img{
@@ -199,6 +311,7 @@ div#textQsn{
     font-family: cursive;
 
 }
+
 
 
 
@@ -231,18 +344,13 @@ footer{
 div.headerMenu{
     background:url('/media/image/fh.jpg');
     background-size: cover;
-    height:870px;
+    height:100px;
     min-height: auto;
     background-repeat: no-repeat;
    
 }
 
-div.resume{
-        display:flex ;
-        flex-direction: column;
-        align-items: end;
-    
-}
+
 div.parcourir {
     display: flex;
     flex-direction: column;
@@ -370,19 +478,26 @@ button.btnRemove:hover{
 
 
 /*vue confirmation*/
-div.mainConfirmation{
-    display:flex;
-    flex-direction: row;
-}
-
-div.left {
-    background-color: aquamarine;
-    background-size: cover;
+div.boxConfirm {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
     display: flex;
-    padding:236px;
-}
+    flex-direction: column;
+    align-items: center;
+  }
 
-div.right{
-    background-color: white;
-    padding: 350px;
-}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
